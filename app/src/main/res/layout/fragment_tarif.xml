@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TarifFragment">
+
+ <ImageView
+     android:id="@+id/img_insert"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:onClick="gorselSec"
+     android:src="@drawable/img_insert"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <EditText
+     android:id="@+id/text_food_name"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="30dp"
+     android:ems="15"
+     android:hint="Yemek adını giriniz.."
+     android:inputType="textPersonName"
+     app:layout_constraintBottom_toTopOf="@id/text_food_recipe"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/img_insert" />
+
+ <EditText
+     android:id="@+id/text_food_recipe"
+     android:layout_width="wrap_content"
+     android:layout_height="0dp"
+     android:layout_marginTop="30dp"
+     android:ems="15"
+     android:gravity="top"
+     android:hint="Yemek tarifini giriniz.."
+     android:text="lskamdlkasmldknaslkndlksamldknaslkndlkasdlkanslkdnlaksndaslkamdlkasldknaslkdnlksandlkasnlksandlknaslkdnaslkndkasnldkna"
+     app:layout_constraintBottom_toBottomOf="@id/btn_save"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/text_food_name" />
+
+ <Button
+     android:id="@+id/btn_save"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:layout_marginBottom="20dp"
+     android:text="Kaydet"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/text_food_recipe"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
